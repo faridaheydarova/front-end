@@ -7,18 +7,24 @@
 </head>
 <body>
     
+<fieldset style="border: 5px solid black; width: 200px;">
+        <legend>Qeydiyyat formu</legend>
 
-
-    <form action="./index.html" method="post" autocomplete="on">
+    <form action="./index.html" method="post" autocomplete="on" target="_blank" novalidate>
 
         
         <input type="text" name="ad-üçün" value="Adını daxil et"><br>
 
         <label for="soyad-üçün">Soyadını qeyd et: </label><br>
-        <input type="text" name="soyad-üçün"><br>
+        <input type="text" name="soyad-üçün" id="soyad-üçün"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /><br>
+
 
         <label for="şifrə-üçün">Şifrə təyin et: </label><br>
-        <input type="password" name="şifrə-üçün"><br>
+       
+        <input type="password" name="şifrə-üçün"  pattern="[a-z0-9]{2,4}$"><br>
 
        
        
@@ -43,6 +49,15 @@
         <input type="radio" name="cinsiyyet" id="kişi">
         <label for="kişi">Kişi</label><br>
 
+        <input type="date">
+
+        <input list="computers">
+        <datalist id="computers">
+                <option value="hp">Hp</option>
+                <option value="acer">Acer</option>
+                <option value="macbook">Macbook</option>
+        </datalist>
+
 <h3>Dil seç</h3>
 
 <label for="az">Azərbaycan</label>
@@ -52,12 +67,30 @@
 <label for="ru">Rus</label>
 <input type="checkbox" id="rus-dili" name="ru" value="Russion"><br>
 
+<h4>Proqramlaşdırma dilini seç</h4>
+
+<select name="programming-language" id="programming-language"  multiple>
+<option value="java">Java</option>
+<option value="javascript">Javascript</option>
+<option value="c++">C++</option>
+<option value="php">Php</option>
+
+</select><br>
+
+
+
+<br>
+<textarea name="address" id="address" rows="4" cols="10" style="resize: vertical;">Adresi daxil edin</textarea><br>
+
+
 <br><input type="submit"  value="Yadda saxla">
+<br>
+<button type="button">Hesabına daxil ol!</button>
       </form>
 
 
       
-
+</fieldset>
 
       
 
