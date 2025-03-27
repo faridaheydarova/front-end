@@ -4,88 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
 <fieldset style="border: 5px solid black; width: 200px;">
         <legend>Qeydiyyat formu</legend>
 
-    <form action="./index.html" method="post" autocomplete="on" target="_blank" novalidate>
-
-        
-        <input type="text" name="ad-üçün" value="Adını daxil et"><br>
-
-        <label for="soyad-üçün">Soyadını qeyd et: </label><br>
-        <input type="text" name="soyad-üçün" id="soyad-üçün"><br>
-
-        <label for="email">Email</label><br>
-        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /><br>
-
-
-        <label for="şifrə-üçün">Şifrə təyin et: </label><br>
-       
-        <input type="password" name="şifrə-üçün"  pattern="[a-z0-9]{2,4}$"><br>
-
-       
-       
-        
-        
- 
-<br>
+    <form action="./index.html" method="post" autocomplete="on" target="_blank">
 
 
 
-        <input type="radio" name="milliyət" id="az">
-        <label for="az">Azərbaycan</label>
-
-        <input type="radio" name="milliyət" id="rus">
-        <label for="rus">Rus</label>
-
-<p>Cinsiyyeti seç</p>
-        <br>
-        <input type="radio" name="cinsiyyet" id="qadın">
-        <label for="qadın">Qadın</label>
-
-        <input type="radio" name="cinsiyyet" id="kişi">
-        <label for="kişi">Kişi</label><br>
-
-        <input type="date">
-
-        <input list="computers">
-        <datalist id="computers">
-                <option value="hp">Hp</option>
-                <option value="acer">Acer</option>
-                <option value="macbook">Macbook</option>
-        </datalist>
-
-<h3>Dil seç</h3>
-
-<label for="az">Azərbaycan</label>
-<input type="checkbox" id="azerbaycan-dili" name="az" value="Azərbaycan">
-<label for="en">İngilis</label>
-<input type="checkbox" id="ingilis-dili" name="en" value="English">
-<label for="ru">Rus</label>
-<input type="checkbox" id="rus-dili" name="ru" value="Russion"><br>
 
 <h4>Proqramlaşdırma dilini seç</h4>
 
-<select name="programming-language" id="programming-language"  multiple>
-<option value="java">Java</option>
-<option value="javascript">Javascript</option>
+<select name="programming-language" id="programming-language" >
+        <optgroup label="front-end">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+        </optgroup>
+        
+<optgroup label="backend">
+        <option value="java">Java</option>
 <option value="c++">C++</option>
 <option value="php">Php</option>
+</optgroup>
 
 </select><br>
 
 
+<input type="color" id="colorInput" onchange="changeColor()"><br>
 
-<br>
-<textarea name="address" id="address" rows="4" cols="10" style="resize: vertical;">Adresi daxil edin</textarea><br>
+<input type="date" name="" id=""><br>
+<input type="datetime-local" name="" id=""><br>
+<input type="email" />
+
+<input type="file">
+<input type="image" style="width: 50px; height: 50px;" src="./image/darwin.png" alt="">
+<input type="time" name="" id="">
+<input type="month">
+<input type="number" name="" id="">
+
+<input type="password" name="" id="">
+<input type="reset" value="məlumatları sıfırla">
+
+
+<input type="search" name="" id="" value="search">
+<input type="url" value="url">
+<input type="week" name="" id=""  value="week">
 
 
 <br><input type="submit"  value="Yadda saxla">
 <br>
-<button type="button">Hesabına daxil ol!</button>
+<button type="button">Hesabına daxil ol!</button><br>
+
+<label for="volume"> Səsi dəyiş(0-50):</label>
+<input type="range" name="volume" min="0" max="50">
+
       </form>
 
 
@@ -93,7 +69,7 @@
 </fieldset>
 
       
-
+<script src="test.js"></script>
 
 </body>
 </html>

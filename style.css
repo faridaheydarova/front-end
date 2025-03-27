@@ -1,35 +1,4 @@
-.search{
-    margin: 10px;
-    float: right;
 
-}
-.button{float: right; margin: 10px; 
-    }
-.img{
-    float: right; 
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 10px;
-}
-.search_container{background-color: aqua; overflow: auto;}
-.sort_container{
-    background-color: brown;
-    overflow: auto
-}
-.sort_btn{
-    float: right;
-}
-.img1{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 10px;
-    float: left;
-}
-.row-container{
-    background-color: blue;
-    overflow: auto;
-    float: left;
-    margin: 20px;
+input{
+    margin-bottom: 10px;
 }
