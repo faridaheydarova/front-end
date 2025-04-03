@@ -1,0 +1,30 @@
+input[type=text], input[type=password]{
+    width: 30%;
+    margin: 8px 0;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 1.5px solid rgb(163, 163, 167);
+    outline: none;
+
+}
+input[type=text]:focus{
+    background-color: aliceblue;
+}
+input[type=search]{
+    background-image: url('image/search-2911.png');
+    background-repeat: no-repeat;
+    background-position: 2px;
+    padding: 12px 20px 12px 20px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    width: 100px;
+    transition: width 0.4s ease-in-out;
+  
+}
+input[type=search]:focus{
+ width: 20%;
+}
+input{
+    margin-bottom: 50px;
+}

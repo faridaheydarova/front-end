@@ -1,75 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                input, label{
+                        margin: 10px;
+                }
+
+        </style>
 </head>
 <body>
-    
-<fieldset style="border: 5px solid black; width: 200px;">
-        <legend>Qeydiyyat formu</legend>
+        <fieldset style="width: 350px;">
+                <legend>LOGIN</legend>
+                <form action="">
 
-    <form action="./index.html" method="post" autocomplete="on" target="_blank">
+                        <label for="email">Enter your email: </label>
+                        <br>
+                        <input type="email" name="email" id="email" pattern="[a-z0-9]+@[a-z0-9-]+/.[3,]"
+                        placeholder="email@mail.com" autofocus required>
+                        <br>
+                        <label for="pwd">Enter your password:</label>
+                        <br>
+                        <input type="password" name="pwd" id="pwd"
+                        pattern="[4,]" required>
+                        <br>
+                        <input type="submit" value="Login">
+                        <br>
+                       <label for="submit"> Do you have an account? </label>
+                        <input type="submit" value="Creat account" name="submit">
 
-
-
-
-<h4>Proqramlaşdırma dilini seç</h4>
-
-<select name="programming-language" id="programming-language" >
-        <optgroup label="front-end">
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="javascript">Javascript</option>
-        </optgroup>
-        
-<optgroup label="backend">
-        <option value="java">Java</option>
-<option value="c++">C++</option>
-<option value="php">Php</option>
-</optgroup>
-
-</select><br>
-
-
-<input type="color" id="colorInput" onchange="changeColor()"><br>
-
-<input type="date" name="" id=""><br>
-<input type="datetime-local" name="" id=""><br>
-<input type="email" />
-
-<input type="file">
-<input type="image" style="width: 50px; height: 50px;" src="./image/darwin.png" alt="">
-<input type="time" name="" id="">
-<input type="month">
-<input type="number" name="" id="">
-
-<input type="password" name="" id="">
-<input type="reset" value="məlumatları sıfırla">
-
-
-<input type="search" name="" id="" value="search">
-<input type="url" value="url">
-<input type="week" name="" id=""  value="week">
-
-
-<br><input type="submit"  value="Yadda saxla">
-<br>
-<button type="button">Hesabına daxil ol!</button><br>
-
-<label for="volume"> Səsi dəyiş(0-50):</label>
-<input type="range" name="volume" min="0" max="50">
-
-      </form>
-
-
-      
-</fieldset>
-
-      
-<script src="test.js"></script>
-
+                </form>
+        </fieldset>
+       
 </body>
 </html>
