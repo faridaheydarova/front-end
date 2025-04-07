@@ -1,4 +1,12 @@
+.flex-container{
+    display: flex;
+justify-content: space-between;
+    background-color: yellowgreen;
+  
+}
+.flex-container > div{
+    margin: 15px;
+    padding: 10px;
+    background-color: yellow;
 
-input{
-    margin-bottom: 10px;
 }
