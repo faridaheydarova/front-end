@@ -1,0 +1,20 @@
+body{
+    counter-reset: counter;
+
+}
+h1{
+    counter-reset: alt-counter;
+    counter-increment:counter ;
+}
+h1::before{
+    content: counter(counter) ". ";
+
+}
+h2{
+    counter-increment: alt-counter;
+
+}
+h2::before{
+    content: counter(counter) "." counter(alt-counter) ". ";
+    padding-left: 15px;
+}
