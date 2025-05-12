@@ -1,0 +1,16 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-image:linear-gradient(to right, BLUE 33%, WHITE 33% 66%, RED 66%);
+  
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(at center, lime, blue);
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-image: conic-gradient(lime, blue);
+}
